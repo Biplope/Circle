@@ -1,0 +1,9 @@
+.hover-pointer {
+    cursor: pointer;
+    /* Changes the cursor to a pointer */
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+    /* Changes the cursor to a help icon on hover */
+}
