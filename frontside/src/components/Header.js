@@ -153,11 +153,6 @@ export const Header = () => {
             {notify && notify.data.length}
           </span>
         </Link>
-        <Link to="/explore">
-          <IconButton className="text-dark">
-            <ExploreIcon />
-          </IconButton>
-        </Link>
         <IconButton onClick={() => dispatch(logout())} className="text-dark">
           <ExitToAppIcon />
         </IconButton>
