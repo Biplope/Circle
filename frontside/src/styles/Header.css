@@ -26,7 +26,7 @@
 
 }
 .active{
-    color:'white';
+    color:'black';
 }
 .header-center input{
     background: transparent;
@@ -34,7 +34,7 @@
     width: 100%;
     padding:1rem;
     border:none;
-    
+    color: black;
     border-radius: 5px;
 }
 .header-center .MuiSvgIcon-root{
@@ -57,16 +57,18 @@
 .header-searchusers{
     margin-top: 5px;
     position: absolute;
-    background: black;
+    background: rgb(186, 182, 182);
     width:100%;
+    border-radius: 5px;
 }
 .header-left{
-    display:flex;
+    display:flex;   
 }
 .header-left .active{
-   background-color:'white';
-}
+   background-color:'blue';
+}   
 .header-leftAvatar{
     display: flex;
+    font-size: 16px;
     align-items: center;
 }

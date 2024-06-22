@@ -72,8 +72,8 @@ export const Header = () => {
     }
   };
   return (
-    <div className="header container-fluid d-flex justify-content-between align-items-center bg-primary text-white p-2 sticky-top">
-      <div className="header-right">
+    <div className="header container-fluid d-flex justify-content-between align-items-center bg-primary text-white px-2 py-2 sticky-top">
+      <div className="header-right pl-5">
         <img
           src={loginImage2} // Path to the imported image
           alt="Login Visual"
@@ -114,30 +114,32 @@ export const Header = () => {
             ))}
         </div>
       </form>
-      <div className="header-left">
+      <div className="header-left pe-5">
         <Link to={`/profile/${auth.user._id}`}>
           {" "}
           <div className="header-leftAvatar">
             <Avatar src={auth.user.avatar} />
             <div className="mt-1">
-              <h4 style={{ color: "black" }}>{auth.user.fullname}</h4>
+              <div className="mx-3">
+                <text style={{ color: "black" }}>{auth.user.fullname}</text>
+              </div>
             </div>
           </div>
         </Link>
 
         <Link to="/">
-          <IconButton>
+          <IconButton className="text-dark">
             <HomeIcon />
           </IconButton>
         </Link>
 
         <Link to="/message">
-          <IconButton>
+          <IconButton className="text-dark">
             <MessageIcon />
           </IconButton>
         </Link>
         <Link to="/notification">
-          <IconButton>
+          <IconButton className="text-dark">
             <NotificationsIcon />
           </IconButton>
           <span
@@ -152,11 +154,11 @@ export const Header = () => {
           </span>
         </Link>
         <Link to="/explore">
-          <IconButton>
+          <IconButton className="text-dark">
             <ExploreIcon />
           </IconButton>
         </Link>
-        <IconButton onClick={() => dispatch(logout())}>
+        <IconButton onClick={() => dispatch(logout())} className="text-dark">
           <ExitToAppIcon />
         </IconButton>
       </div>
