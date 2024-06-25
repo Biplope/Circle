@@ -39,7 +39,7 @@ const Info = ({ userData, dispatch,  auth, profile, post,  id}) =>{
                 <div className="profileinfo-center">
                     <img className="profileinfo-centeravatar" src={user.avatar} alt=""/>
                    { user && auth && user?._id === auth.user._id ?
-                    <button className="profileinfo-centerbutton" onClick={()=>SetOnEdit(true)}>EDIT PROFILE</button>
+                    <button className="profileinfo-centerbutton" onClick={()=>SetOnEdit(true)}>Edit Profile</button>
                     : <GlobalFriendBtn classbtn = "profileinfo-centerbutton" user={user}/>
                     }
                 </div>
@@ -56,7 +56,7 @@ const Info = ({ userData, dispatch,  auth, profile, post,  id}) =>{
                     </div>
                     <div className="profileinfo-bottomcenter">
                         <h3 className="profileinfo-fullname">{user.fullname}</h3>
-                        <h5 className="profileinfo-username">{user.username}</h5>
+                        <h5 className="profileinfo-username">@{user.username}</h5>
                     </div>
                     <div className="profileinfo-bottomright">
                     <div className="profileinfo-stat">

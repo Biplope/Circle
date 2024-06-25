@@ -136,7 +136,7 @@ const Status = () => {
                     <img src={auth?.user.avatar} alt="" />
                     <h4>Status</h4>
                 </div>
-                <div className="status-middle">
+                <div className="status-middle my-3">
                     <textarea type="text" placeholder="Share your thoughts"
                         value={content} onChange={(e) => setContent(e.target.value)}
                         rows="5" col="1000" />
@@ -177,7 +177,7 @@ const Status = () => {
                         <canvas ref={refCanvas} style={{ display: 'none' }} />
                     </div>
                 }
-                <div className="status-footer">
+                <div className="status-footer ">
                     <div className="status-footerright">
                         {
                             stream

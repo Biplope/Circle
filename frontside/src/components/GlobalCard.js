@@ -79,9 +79,9 @@ const {auth} = useSelector(state => state)
      
     </div>
 }
-                <div className="globalcard-contentbottomnavigate"> 
+                {/* <div className="globalcard-contentbottomnavigate"> 
                 <span onClick={()=>toggleshowinfo('showinfo')}> o </span> <span onClick={()=>toggleshowinfo('showinfoabout')} > o </span>
-                </div>
+                </div> */}
             </div>
             
         </div>

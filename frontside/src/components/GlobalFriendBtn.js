@@ -39,7 +39,7 @@ useEffect(()=>{
         <>
         {
             friend ? 
-              <button className={classbtn} onClick = {removefriend} style={{backgroundColor:'crimson'}}>Un Friend</button>
+              <button className={classbtn} onClick = {removefriend} style={{backgroundColor:'crimson'}}>Unfriend</button>
             : <button className={classbtn} onClick = {addfriend}>Add Friend</button>
         }
         </>

@@ -6,25 +6,28 @@
     max-width: 250px;
     min-width:250px;
     min-height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #000;
 }
 
 .profileabout-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     
 }
 .profileabout-contenttop-head{
     padding:1rem .3rem;
     font-size:1.5rem;
     font-weight: 700;
-   border-bottom: 2px solid gray;
+   border-bottom: 2px solid rgb(10, 10, 10);
     
 }
 .profileabout-contentcenter-story{
     padding:.5rem;
     font-size:14px;
     font-weight: 500;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(9, 9, 9);
 
 }
 .profileabout-contentbottom{
@@ -44,7 +47,7 @@
 .profileabout-contentbottominfo-head{
 font-size:medium;
 font-weight: 600;
-color:gray;
+color:rgb(0, 0, 0);
 }
 
 .profileabout-contentbottominfo-body{

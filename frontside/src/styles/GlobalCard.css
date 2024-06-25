@@ -2,7 +2,8 @@
     max-width:250px;
     min-height:400px;
     margin:1rem;
-    
+    border: 2px solid #000;
+    border-radius: 10px;
    
 }
 
@@ -50,7 +51,7 @@
 }
 
 .globalcard-contenttop{
-    width:250px;
+    width:fit;
     height:130px;
 
 }

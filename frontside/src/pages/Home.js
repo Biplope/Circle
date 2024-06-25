@@ -8,9 +8,9 @@ import "../styles/Home.css"
 const Home = () =>{
     return (
         <div className="home">
-            <div className="homebanner">
-                <Banner/>
-            </div>
+                {/* <div className="homebanner">
+                    <Banner/>
+                </div> */}
             <div className="homemaincontainer">
                 <div className="homemain-contentleft">
                     <HomeLeft/>
