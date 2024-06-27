@@ -1,15 +1,11 @@
-.postcardheader{
-    
+/* .postcardheader{
     padding:.5rem 1rem;
-}
+} */
 .postcardheadertop{
     display:flex;
-  
-
 }
 .postcardheader{
     display: flex;
-  
     justify-content: space-between;
 }
 .postcarddropdown{
@@ -22,8 +18,6 @@
     min-width:100px;
     color:rgb(81, 61, 173);
     z-index:4;
-    
-    
 }
 .postcarddropdown h6{
     padding:5px;
@@ -76,10 +70,16 @@
     color:rgb(104, 104, 104);
     font-weight: 500;
 }
-.postcardbodyimage{
+.postcardbodyimage {
+    position: relative;
     height: 300px;
-    position:relative;
+    /* Adjust height as needed */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .postcardbodyimageprev{
 position: absolute;
@@ -104,14 +104,13 @@ cursor: pointer;
     cursor: pointer;
     
 }
-.postcardbodyimages img{
-    width:100%;
-    height:100%;
+.postcardbodyimages img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    padding:.5rem 0;
-    box-shadow: 3px 3px 15px rgb(34, 34, 34);
-    
+    /* This will ensure the image covers the entire container */
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .postcardfootertop{
@@ -127,7 +126,6 @@ cursor: pointer;
     align-items: center;
     justify-content: space-evenly;
     border-top:1px solid gray;
-    padding:.5rem 0;
     
 }
 .postcardfooterbottom p{
@@ -146,6 +144,7 @@ cursor: pointer;
 }
 .postcardfooterbottomitems{
     display: flex;
+    /* color: black; */
 }
 .postcardfooterbottom .MuiSvgIcon-root{
     margin-top: .5rem;

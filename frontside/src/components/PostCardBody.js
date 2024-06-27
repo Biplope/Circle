@@ -19,10 +19,10 @@ const PostCardBody = ({pos}) =>{
         }
     }
     
-
+        
 
     return (
-        <div className="postcardbody" style={{ margin:'1rem 0',padding:'1rem 0'}}>
+        <div className="postcardbody mt-3">
             <div className="postcardbodycontent">
                 {pos && pos.content?.length < 60 ?
                 pos.content :
@@ -40,7 +40,7 @@ const PostCardBody = ({pos}) =>{
             </div>
             <div className="postcardbodyimage">
                
-               <span className="postcardbodyimagenext" onClick={()=>shownextimage(pos.images)} > v </span>
+               <span className="postcardbodyimagenext" onClick={()=>shownextimage(pos.images)} >v </span>
                <span className="postcardbodyimageprev" onClick={()=>showprevimage(pos.images)}> v </span>
               
                 {pos.images?.length> 0 && pos.images?.map((image,index)=>(
