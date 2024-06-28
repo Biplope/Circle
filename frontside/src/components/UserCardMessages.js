@@ -15,7 +15,7 @@ const UserCardMessages = ({children, user,handleClose,msg}) =>{
             <div style={{display:'flex', justifyContent:'space-between',   padding:'10px', cursor:'pointer', alignItems:'center', borderBottom:'1px solid rgb(149, 149, 231)'}}>
             <div onClick={handleCloseAll} style={{display:'flex', padding:'10px', alignItems:'center'}} >
             <Avatar src={user?.avatar}/>
-            <div style={{marginLeft:'6px', color:'white'}}>
+            <div style={{marginLeft:'6px', color:'black'}}>
                 <span style={{display:'block'}}>{user?.username}</span>
                 <small>{
                     msg

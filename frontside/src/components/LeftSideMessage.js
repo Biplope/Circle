@@ -53,7 +53,7 @@ const LeftSideMessage = () => {
         <div className="input-group">
           <input
             type="text"
-            className="form-control"
+            className="form-control mr-3"
             placeholder="Find the user for chat"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
