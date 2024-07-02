@@ -125,83 +125,8 @@ const RightSideMessage = () => {
           </UserCardMessages>
         )}
       </div>
-      <div class="container">
-        <div class="row">
-          <button
-            className="rightsidecontentinputbtn"
-            onClick={handleuploadinput}
-          >
-            {" "}
-            <ImageIcon />{" "}
-          </button>
-          <div class="col-11 ">
-            {" "}
-            <form className="rightsidecontentinput" onSubmit={handleSubmit}>
-              <input
-                className="rightsidecontentinputtext"
-                type="text"
-                placeholder="Type your message"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-              />
-              <div className="rightsidecontentinputfileupload">
-                <input
-                  style={{ display: "none" }}
-                  type="file"
-                  id="fileuploadmsg"
-                  multiple
-                  accept="image/*, video/*"
-                  onChange={uploadmedia}
-                />
-                
-              </div>
-              <button
-                type="submit"
-                className="rightsidecontentinputbtn"
-                disabled={text || media.length !== 0 ? false : true}
-              >
-                {" "}
-                <SendIcon />{" "}
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <div class="container"></div>
 
-      {/* <form className="rightsidecontentinput" onSubmit={handleSubmit}>
-        <input
-          className="rightsidecontentinputtext"
-          type="text"
-          placeholder="type the message"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-        />
-        <div className="rightsidecontentinputfileupload">
-          <button
-            className="rightsidecontentinputbtn"
-            onClick={handleuploadinput}
-          >
-            {" "}
-            <ImageIcon />{" "}
-          </button>
-          <input
-            style={{ display: "none" }}
-            type="file"
-            id="fileuploadmsg"
-            multiple
-            accept="image/*, video/*"
-            onChange={uploadmedia}
-          />
-        </div>
-        <button
-          type="submit"
-          className="rightsidecontentinputbtn"
-          disabled={text || media.length !== 0 ? false : true}
-        >
-          {" "}
-          <SendIcon />{" "}
-        </button>
-      </form> */}
       <div
         className="rightsidecontentinputmsg-mediadiv"
         style={{ display: media.length > 0 ? "grid" : "none" }}
@@ -234,11 +159,11 @@ const RightSideMessage = () => {
               {msg.sender === auth.user._id && (
                 <div className="rightsidecontentmessagesours">
                   <MsgDisplay user={auth.user} msg={msg} />
-                  <DeleteIcon
+                  {/* <DeleteIcon
                     className="deletemessagechat"
                     onClick={() => handleDeleteMsg(msg)}
                     style={{ color: "salmon" }}
-                  />
+                  /> */}
                 </div>
               )}
             </div>
@@ -249,6 +174,48 @@ const RightSideMessage = () => {
               <img src={LoadIcon} alt="loading" />
             </div>
           )}
+        </div>
+        <div class="row mt-2">
+          <button
+            className="rightsidecontentinputbtn"
+            onClick={handleuploadinput}
+          >
+            {" "}
+            <ImageIcon />{" "}
+          </button>
+          <div class="col-11">
+            {" "}
+            <form
+              className="rightsidecontentinput d-flex pt-2"
+              onSubmit={handleSubmit}
+            >
+              <input
+                className="rightsidecontentinputtext"
+                type="text"
+                placeholder="Type your message"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+              />
+              <div className="rightsidecontentinputfileupload">
+                <input
+                  style={{ display: "none" }}
+                  type="file"
+                  id="fileuploadmsg"
+                  multiple
+                  accept="image/*, video/*"
+                  onChange={uploadmedia}
+                />
+              </div>
+              <button
+                type="submit"
+                className="rightsidecontentinputbtn"
+                disabled={text || media.length !== 0 ? false : true}
+              >
+                {" "}
+                <SendIcon />{" "}
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

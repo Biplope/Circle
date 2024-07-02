@@ -23,9 +23,9 @@ const MsgDisplay =({user,msg}) => {
     return (
         <div className="msgdisplay">
             <div className="msgdisplayinfouser">
-                <img className="msgdisplayinfouseravatar" src={user?.avatar} alt={user?.fullname}/>
-                <img className="msgdisplayinfouseravatartwo" src={user?.avatar} alt={user?.fullname}/>
-                <span className="msgdisplayinfouserusername"> {user?.username}</span>
+                {/* <img className="msgdisplayinfouseravatar" src={user?.avatar} alt={user?.fullname}/> */}
+                {/* <img className="msgdisplayinfouseravatartwo" src={user?.avatar} alt={user?.fullname}/> */}
+                {/* <span className="msgdisplayinfouserusername text-dark"> {user?.username}</span> */}
             </div>
             <div className="msgdisplaytext">
                { msg.text &&  
@@ -33,7 +33,7 @@ const MsgDisplay =({user,msg}) => {
 }
 {
     msg.media.map((item,index)=> (
-        <div key={index}>
+        <div key={index}>   
             {
                     item.secure_url.match(/video/i)
                     ?videoshow( item.secure_url)
@@ -44,9 +44,9 @@ const MsgDisplay =({user,msg}) => {
 }
             </div>
             <div className="msgdisplaytime">
-                { msg.createdAt && 
+                {/* { msg.createdAt && 
                 <small className="msgdisplayinfousertime">{msg.createdAt}</small>
-}
+} */}
             </div>
         </div>
     )

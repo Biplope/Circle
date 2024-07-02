@@ -4,7 +4,7 @@
     margin: 1rem auto;
     display: flex;
     
-    height: 100vh;
+    height: 83vh;
     border:2px solid black;
     background-color: #eaeaec;
     border-radius: 20px;
@@ -22,7 +22,7 @@
     
     width:100%;
     border-radius: 0 20px 20px 0;
-    padding:1rem .5rem;
+    /* padding:1rem .5rem; */
 }
 
 
@@ -68,14 +68,7 @@ background-color: transparent;
 
 }
 
-.rightsidecontentinput {
-    background-color: rgb(90, 90, 90);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 6px;
-    margin-top: 10px;
-}
+
 .rightsidecontentmessages{
    
     padding:10px;
@@ -93,13 +86,14 @@ background-color: transparent;
     align-items: flex-end;
 }
 .rightsidecontentmessagesours{
-    background-color: rgba(18, 133, 161, 0.548);
-    border: 2px solid rgb(66, 5, 5);
-    padding:10px;
+    background-color: #FAF115;
+    /* border: 2px solid rgb(66, 5, 5); */
+    border-radius: 20px 0px 20px 20px;
+    padding:5px;
     margin: 10px 5px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     align-self: flex-end;
-   
+    
     width: 200px;
     
    
@@ -107,7 +101,7 @@ background-color: transparent;
 }
 
 .rightsidecontentmessagesother{
-    border: 2px solid rgb(3, 69, 122);
+    /* border: 2px solid rgb(3, 69, 122);   */
     padding:10px;
     margin: 10px 5px;
     border-radius: 20px;
@@ -121,12 +115,13 @@ background-color: transparent;
 }
 .rightsidecontentinputtext {
   flex: 1;
+  border-radius: 10px;
   margin-right: 10px;
 }
 
 
 .rightsidecontentinputbtn{
-    /* background-color: transparent; */
+    background-color: transparent;
     border:none;
     cursor: pointer;
 
@@ -139,11 +134,11 @@ background-color: transparent;
 
 .msgdisplayinfouseravatar{
     height: 25px;
-    width:20px;
+    width:25px;
     object-fit: cover;
     padding:1px;
     border:2px solid indianred;
-    border-radius: 75px 0 0 25px;
+    border-radius: 75px 75px 75px 75px;
 }
 
 .msgdisplayinfouseravatartwo{
@@ -166,12 +161,12 @@ background-color: transparent;
 }
 
 .msgdisplayinfocontent{
-    background-color: rgb(5, 83, 114);
+    background-color: #FAF115;
     padding:10px;
     font-size: 13px;
-    margin-top: 2px;
-    border-radius: 20px 0 20px 0px;
-    color:rgb(90, 186, 224);
+    /* margin-top: 2px; */
+    border-radius: 20px 0px 20px 20px;
+    color:black ;
     word-wrap: break-word;
     
 }
