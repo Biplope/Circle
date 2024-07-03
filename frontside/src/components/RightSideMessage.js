@@ -190,7 +190,7 @@ const RightSideMessage = () => {
               onSubmit={handleSubmit}
             >
               <input
-                className="rightsidecontentinputtext"
+                className="form-control mr-3"
                 type="text"
                 placeholder="Type your message"
                 value={text}

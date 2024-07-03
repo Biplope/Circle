@@ -29,7 +29,7 @@ const Notifications = ( ) =>{
             <div className="notificationheader">
                 <h5 className="notificationheaderheding"> Notifications</h5>
                 <h5 className="notificationheaderheding" style={{cursor:'pointer'}} onClick={handleDeleteAll}> Delete All </h5>
-                <small className="notificationheadericon">  bell icon </small>
+                {/* <small className="notificationheadericon">  bell icon </small> */}
             </div>
             {
                 notify.data.length > 0  && notify?.data.map((dt,index)=> (

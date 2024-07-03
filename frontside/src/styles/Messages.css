@@ -84,7 +84,7 @@ background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
+}   
 .rightsidecontentmessagesours{
     background-color: #FAF115;
     /* border: 2px solid rgb(66, 5, 5); */
@@ -92,7 +92,7 @@ background-color: transparent;
     padding:5px;
     margin: 10px 5px;
     /* border-radius: 20px; */
-    align-self: flex-end;
+    align-self: flex-start;
     
     width: 200px;
     
@@ -105,13 +105,9 @@ background-color: transparent;
     padding:10px;
     margin: 10px 5px;
     border-radius: 20px;
-    background-color: rgba(3, 69, 122, 0.527);
-    align-self: flex-start;
-    
+    background-color: rgba(202, 202, 201, 0.527);
+    /* align-self: flex-end; */
     width: 200px;
- 
-    
-    
 }
 .rightsidecontentinputtext {
   flex: 1;
@@ -161,14 +157,14 @@ background-color: transparent;
 }
 
 .msgdisplayinfocontent{
-    background-color: #FAF115;
-    padding:10px;
+    background-color: transparent;
     font-size: 13px;
     /* margin-top: 2px; */
-    border-radius: 20px 0px 20px 20px;
+    /* border-radius: 20px 0px 20px 20px; */
     color:black ;
     word-wrap: break-word;
-    
+    padding-left: 7px;
+    padding-top: 2px;
 }
 
 .msgdisplayinfousertime{
