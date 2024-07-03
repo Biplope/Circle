@@ -66,7 +66,7 @@ const EditProfile = ({ user, SetOnEdit }) => {
               <div className="edit-icon" onClick={selectUpload}>
                 <i className="fas fa-camera">
                   <p className="editprofile-userdatapara d-inline">
-                    Change Pic
+                    U
                   </p>
                 </i>
               </div>
