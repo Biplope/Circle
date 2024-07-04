@@ -83,7 +83,7 @@ const Login = () => {
               </div>
               <div className="form-check mb-3">
                 <input
-                  className="form-check-input mx-1"
+                  className="form-check-input"
                   type="checkbox"
                   id="showPassword"
                   checked={showpass}
