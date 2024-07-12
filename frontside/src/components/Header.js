@@ -75,6 +75,7 @@ export const Header = () => {
     <div className="header container-fluid d-flex justify-content-between align-items-center bg-primary text-white px-2 py-2 sticky-top">
       <div className="header-right pl-5">
         <img
+          to="/"
           src={loginImage2} // Path to the imported image
           alt="Login Visual"
           style={{ height: "40px", width: "100px" }}
