@@ -11,4 +11,5 @@ const HomeLeft = () =>{
     )
 }
 
+
 export default HomeLeft;
