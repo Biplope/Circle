@@ -115,6 +115,7 @@ const Profile = () => {
     setPhotos(newprofileimages);
   }, [post]);
 
+
   return (
     <div className="profile">
       <Info
