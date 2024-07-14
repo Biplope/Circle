@@ -84,6 +84,7 @@ export const Header = () => {
       </div>
       <form className="header-center" onSubmit={handleSearch}>
         <input
+        
           type="text"
           placeholder="Search "
           value={search}
