@@ -18,6 +18,7 @@ const Posts = () => {
             className="postCards"
             key={pos._id}
             style={{
+              
               backgroundColor: "white",
               padding: "1rem",
               marginTop: "1rem",
