@@ -41,6 +41,7 @@ const {auth} = useSelector(state => state)
             </div>
           </Link>
           {showinfo && (
+            
             <>
               <div className="globalcard-contentbottom">
                 <div className="globalcard-contentbottomstat">
